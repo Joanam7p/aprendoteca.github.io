@@ -69,28 +69,26 @@ text-decoration:none;
 <script>
 
 const fichas = [
-"fichas/gramatica-1.pdf"
+{
+ficheiro: "fichas/teste-pronome-determinante-recursos-verbos-preposicoes.pdf",
+nome: "Teste: Pronome VS Determinante, Recursos expressivos, Conjugações verbais e Preposições"
+}
 ];
 
 const lista = document.getElementById("lista-fichas");
 
 fichas.forEach(ficha => {
 
-let nome = ficha.split("/").pop()
-.replace(".pdf","")
-.replaceAll("-"," ");
-
 let link = document.createElement("a");
 
-link.href = ficha;
+link.href = ficha.ficheiro;
 link.target = "_blank";
 link.className = "ficha";
-link.textContent = "⬇ " + nome;
+link.textContent = "⬇ " + ficha.nome;
 
 lista.appendChild(link);
 
 });
-
 </script>
 
 
