@@ -2,12 +2,12 @@
 <html lang="pt">
 <head>
 <meta charset="UTF-8">
-<title>PT - Português | 5.º Ano</title>
+<title>Português — 5.º Ano</title>
 
 <style>
 
 body{
-font-family: Arial;
+font-family:Arial;
 background:#f4f6fb;
 text-align:center;
 margin:0;
@@ -23,18 +23,14 @@ section{
 padding:40px;
 }
 
-.lista{
-max-width:600px;
-margin:auto;
-}
-
 .ficha{
 display:block;
 background:white;
 padding:15px;
-margin:10px 0;
-border-radius:8px;
-box-shadow:0 2px 6px rgba(0,0,0,0.1);
+margin:12px auto;
+border-radius:10px;
+box-shadow:0 3px 10px rgba(0,0,0,0.1);
+width:260px;
 text-decoration:none;
 color:#333;
 font-weight:bold;
@@ -52,18 +48,19 @@ text-decoration:none;
 }
 
 </style>
+
 </head>
 
 <body>
 
 <header>
-<h1>PT - Português</h1>
-<p>5.º Ano — Fichas de estudo</p>
+<h1>Português — 5.º Ano</h1>
+<p>Fichas de estudo</p>
 </header>
 
 <section>
 
-<div class="lista" id="lista-fichas"></div>
+<div id="lista-fichas"></div>
 
 <a href="../index.html" class="voltar">⬅ Voltar ao 5.º Ano</a>
 
@@ -71,19 +68,20 @@ text-decoration:none;
 
 <script>
 
-/* lista de fichas na pasta */
 const fichas = [
-"fichas/gramatica-1.pdf",
-"fichas/gramatica-2.pdf"
+"fichas/gramatica-1.pdf"
 ];
 
 const lista = document.getElementById("lista-fichas");
 
 fichas.forEach(ficha => {
 
-let nome = ficha.split("/").pop().replace(".pdf","").replaceAll("-"," ");
+let nome = ficha.split("/").pop()
+.replace(".pdf","")
+.replaceAll("-"," ");
 
 let link = document.createElement("a");
+
 link.href = ficha;
 link.target = "_blank";
 link.className = "ficha";
@@ -94,6 +92,8 @@ lista.appendChild(link);
 });
 
 </script>
+
+
 
 </body>
 </html>
