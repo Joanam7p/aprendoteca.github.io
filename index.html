@@ -5,90 +5,127 @@
 <title>Aprendoteca</title>
 
 <style>
-body{
-font-family: Arial;
-margin:0;
-background:#f4f6fb;
-text-align:center;
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background: #f4f6fb;
+    text-align: center;
 }
 
-header{
-background:#4CAF50;
-color:white;
-padding:30px;
+header {
+    background: #4CAF50;
+    color: white;
+    padding: 30px;
 }
 
-section{
-padding:40px;
+/* Logo da Aprendoteca */
+.logo {
+    width: 160px;
+    height: 160px;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto 10px auto;
 }
 
-.card{
-display:inline-block;
-background:white;
-padding:20px;
-margin:15px;
-border-radius:10px;
-box-shadow:0 3px 10px rgba(0,0,0,0.1);
-width:200px;
+header p {
+    font-size: 18px;
+    margin: 5px 0 0 0;
 }
 
-a{
-text-decoration:none;
-color:#333;
+section {
+    padding: 40px;
 }
 
-footer{
-background:#333;
-color:white;
-padding:20px;
-margin-top:40px;
+section h2 {
+    margin-bottom: 30px;
 }
+
+.card {
+    display: inline-block;
+    background: white;
+    padding: 20px;
+    margin: 15px;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    width: 200px;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+.card h3 {
+    margin-bottom: 15px;
+}
+
+.card p {
+    margin: 0;
+}
+
+footer {
+    background: #333;
+    color: white;
+    padding: 20px;
+    margin-top: 40px;
+}
+
 </style>
 </head>
 
 <body>
 
 <header>
-<h1>📚 Aprendoteca</h1>
-<p>Material de estudo organizado por ciclos</p>
+
+    <img src="logo-aprendoteca.png" alt="Logo da Aprendoteca" class="logo">
+
+    <p>Material de estudo organizado por ciclos</p>
+
 </header>
 
 <section>
 
-<h2>Escolhe o ciclo de ensino</h2>
+    <h2>Escolhe o ciclo de ensino</h2>
 
-<a href="1-ciclo/index.html">
-<div class="card">
-<h3>1.º Ciclo</h3>
-<p>1.º ao 4.º ano</p>
-</div>
-</a>
+    <a href="1-ciclo/index.html">
+        <div class="card">
+            <h3>1.º Ciclo</h3>
+            <p>1.º ao 4.º ano</p>
+        </div>
+    </a>
 
-<a href="2-ciclo/index.html">
-<div class="card">
-<h3>2.º Ciclo</h3>
-<p>5.º e 6.º ano</p>
-</div>
-</a>
+    <a href="2-ciclo/index.html">
+        <div class="card">
+            <h3>2.º Ciclo</h3>
+            <p>5.º e 6.º ano</p>
+        </div>
+    </a>
 
-<a href="3-ciclo/index.html">
-<div class="card">
-<h3>3.º Ciclo</h3>
-<p>7.º ao 9.º ano</p>
-</div>
-</a>
+    <a href="3-ciclo/index.html">
+        <div class="card">
+            <h3>3.º Ciclo</h3>
+            <p>7.º ao 9.º ano</p>
+        </div>
+    </a>
 
-<a href="secundario/index.html">
-<div class="card">
-<h3>Secundário</h3>
-<p>Biologia e Geologia</p>
-</div>
-</a>
+    <a href="secundario/index.html">
+        <div class="card">
+            <h3>Secundário</h3>
+            <p>Biologia e Geologia</p>
+        </div>
+    </a>
 
 </section>
 
 <footer>
-🦉 Aprendoteca — O teu espaço de estudo
+    🦉 Aprendoteca — O teu espaço de estudo
 </footer>
 
 </body>
